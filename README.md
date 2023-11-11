@@ -3,7 +3,7 @@
 
   This repo also contains 5 main notebooks in which you only need you specify the paths to your owns path following the data structure of Frac_Atlas dataset.
   
-# a Walk through notebooks:
+# A walk through the notebooks:
 
   ## S2_bayena_Yolo_to_mask.ipynb
   this notebook takes the images from the fracatlas and gives you an output of full res images and full res masks for all the data, hence the non fractured masks are just black images as it doesnt have any segmentations or labels.

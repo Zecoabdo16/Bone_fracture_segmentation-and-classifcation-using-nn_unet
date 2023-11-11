@@ -25,7 +25,9 @@ then you will be able to train a new nn-unet model using a new dataset without h
   now that you have the 224p orginals images and 224p segmented masks, all you have to do is to modifiy the original data frame so that you have the orginal labels and the new images. 
    I have written a full custom generator "class MyGen(Dataset)" that resturns the segmented image array ( the image and the masks combined ) in a format that any deeplearning can use.
 
-  ### with some modification and parameters changes walking through this notebook, you can modify it to any similar tasks with no issue.
+   to start your traing from a check point or from saved model, all you have to do is to uncomment the model.load(--) line after adding the weights path.
+
+  ### with some modification and parameters changes walking through this notebook, you can modify it to any similar tasks with no issues.
 
   ## s6_Classifier_inference.ipynb
   this is an inference refrence for the classifier as the nn-unet doesnt have any inference code in their docs yet you can run the s4 notebooks starting from the nn-unet part and skip the training cells and run the prediction cell and then you can use the output seperatly.

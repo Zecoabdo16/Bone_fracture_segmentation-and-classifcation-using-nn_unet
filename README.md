@@ -12,7 +12,7 @@
 
   ## S3_Bayena_Data_splitting_preprocessing_for_nnunet.ipynb
   this one is meant to to preprocess the full res outputs from the yolo , resize the images and prepare the data folders and names to work with directly with nn-unet.
-    #### like the previous one, add your paths paths and you are good to go. but also you can skip this one for reason that will be discussed in the next few lines.
+  #### like the previous one, add your paths paths and you are good to go. but also you can skip this one for reason that will be discussed in the next few lines.
 
 
   ## S4_Bayena_model_Training_for_nnunet.ipynb  

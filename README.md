@@ -23,7 +23,7 @@ then you will be able to train a new nn-unet model using a new dataset without h
 
   # s5_classifcation.ipynb
   now that you have the 224p orginals images and 224p segmented masks, all you have to do is to modifiy the original data frame so that you have the orginal labels and the new images. 
-  # I have written a full custom generator "class MyGen(Dataset)" that resturns the segmented image array ( the image and the masks combined ) in a format that any deeplearning can use.
+   I have written a full custom generator "class MyGen(Dataset)" that resturns the segmented image array ( the image and the masks combined ) in a format that any deeplearning can use.
 
   with some modification and parameters changes walking through this notebook, you can modify it to any similar tasks with no issue.
 

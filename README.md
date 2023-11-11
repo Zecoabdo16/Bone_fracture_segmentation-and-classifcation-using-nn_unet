@@ -18,13 +18,13 @@
 
   #S4_Bayena_model_Training_for_nnunet.ipynb  
       this notebook take the output from s2 and then process it for nn-unet. and to train nn-unet, all you have to do is to carefully walk throught the notebook starting from # Import basic packages for later use
-then you will be able to train a new nn-unet model using a new dataset without having any errors. I picked 1517 images splitted into 717 fractured and 800 non fracture and trained for 50 epochs 5 folds using the #-tr nnUNetTrainer_10epochs class. 
+then you will be able to train a new nn-unet model using a new dataset without having any errors. I picked 1517 images splitted into 717 fractured and 800 non fracture and trained for 50 epochs 5 folds using the "-tr nnUNetTrainer_10epochs" class. 
 
       I have created this notebook to be a future refrence for this kind of work pipeline in the future and added some links  for furture need.
 
   #s5_classifcation.ipynb
     now that you have the 224p orginals images and 224p segmented masks, all you have to do is to modifiy the original data frame so that you have the orginal labels and the new images. 
-    # I have written a full custom generator #class MyGen(Dataset) that resturns the segmented image array ( the image and the masks combined ) in a format that any deeplearning can use.
+    # I have written a full custom generator "class MyGen(Dataset)" that resturns the segmented image array ( the image and the masks combined ) in a format that any deeplearning can use.
 
     with some modification and parameters changes walking through this notebook, you can modify it to any similar tasks with no issue.
 

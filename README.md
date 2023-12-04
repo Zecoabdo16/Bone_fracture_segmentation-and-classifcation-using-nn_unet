@@ -5,17 +5,17 @@
   
 # A walk through the notebooks:
 
-  ## S2_bayena_Yolo_to_mask.ipynb
+  ## S2_Yolo_to_mask.ipynb
   this notebook takes the images from the fracatlas and gives you an output of full res images and full res masks for all the data, hence the non fractured masks are just black images as it doesnt have any segmentations or labels.
 
   #### Just add your own paths and you are ready to go.
 
-  ## S3_Bayena_Data_splitting_preprocessing_for_nnunet.ipynb
+  ## S3_Data_splitting_preprocessing_for_nnunet.ipynb
   this one is meant to to preprocess the full res outputs from the yolo , resize the images and prepare the data folders and names to work with directly with nn-unet.
   #### like the previous one, add your paths paths and you are good to go. but also you can skip this one for reason that will be discussed in the next few lines.
 
 
-  ## S4_Bayena_model_Training_for_nnunet.ipynb  
+  ## S4_model_Training_for_nnunet.ipynb  
   this notebook take the output from s2 and then process it for nn-unet. and to train nn-unet, all you have to do is to carefully walk throught the notebook starting from # Import basic packages for later use
 then you will be able to train a new nn-unet model using a new dataset without having any errors. I picked 1517 images splitted into 717 fractured and 800 non fracture and trained for 50 epochs 5 folds using the "-tr nnUNetTrainer_10epochs" class. 
 

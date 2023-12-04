@@ -1,4 +1,4 @@
-# Bayena_task
+# Bone_FRAC_task
   This is repo is meant to create a classification model starting from predectings the masks through yolo8-seg and use these masks to train a nn-unet and use its prediction for the classification.
 
   This repo also contains 5 main notebooks in which you only need you specify the paths to your owns path following the data structure of Frac_Atlas dataset.
